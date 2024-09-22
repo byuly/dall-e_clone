@@ -25,6 +25,7 @@ const CreatePost = () => {
     prompt:'',
     photo:'',
   });
+
   const [generatingImg, setgeneratingImg] = useState(false);
   const [loading, setloading] = useState(false);
 
@@ -58,6 +59,15 @@ const CreatePost = () => {
             isSurpriseMe
             handleSurpriseMe={handleSurpriseMe}
           />
+          <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm 
+      rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex 
+      justify-center items-center"> 
+        {form.photo ? (<img>
+          
+        </img>):(<img>
+        
+        </img>)}
+      </div>
         </div>
       </form>
     </section>
