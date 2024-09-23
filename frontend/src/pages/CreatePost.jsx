@@ -5,23 +5,6 @@ import { preview } from '../assets';
 import { getRandomPrompt } from '../utils'
 import { FormField, Loader } from '../components';
 
-const generateImage = () => {
-
-}
-
-const handleSubmit = () => {
-
-}
-
-const handleChange = (e) => {
-
-}
-
-const handleSurpriseMe = () => {
-
-}
-
-
 const CreatePost = () => {
   const navigate = useNavigate();
   const [form, setform] = useState({
@@ -32,6 +15,23 @@ const CreatePost = () => {
 
   const [generatingImg, setgeneratingImg] = useState(false);
   const [loading, setloading] = useState(false);
+
+const generateImage = () => {
+
+}
+
+const handleSubmit = () => {
+
+}
+
+const handleChange = (e) => {
+  setform({...form, [e.target.name]: e.target.value})
+}
+
+const handleSurpriseMe = () => {
+  const randomPrompt = getRandomPrompt(form.prompt);
+  setform({...form, prompt: randomPrompt})
+}
 
   return (
     <section className="max-w-7xl mx-auto">
@@ -50,6 +50,7 @@ const CreatePost = () => {
           <FormField 
             LabelName="Your name"
             type= "text"
+            name="name"
             placeholder="John Doe"
             value={form.name}
             handleChange={handleChange}
@@ -57,7 +58,8 @@ const CreatePost = () => {
            <FormField 
             LabelName="Prompt"
             type= "text"
-            placeholder="random prompt statement"
+            name="prompt"
+            placeholder=""
             value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe
@@ -102,7 +104,7 @@ const CreatePost = () => {
         </p>
         <button
         type="submit"
-        className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w=auto
+        className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto
         px-5 py-2.5 text-center">
           {loading ? 'Sharing...' : 'Share with the community'}
         </button>
