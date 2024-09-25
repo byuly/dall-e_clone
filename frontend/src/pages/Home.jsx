@@ -20,7 +20,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      setLoading(true);
+      setloading(true);
 
       try {
         const response = await fetch('http://localhost:8080/api/v1/post', {
@@ -38,7 +38,7 @@ const Home = () => {
       } catch (error) {
         alert(error)
       } finally {
-        setLoading(false);
+        setloading(false);
       }
       
     } 
