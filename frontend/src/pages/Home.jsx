@@ -82,7 +82,7 @@ const Home = () => {
                 title="No search results found" />
               ) : (
                 <RenderCards
-                  data={[]}
+                  data={allPosts}
                   title="No posts found"
                 />
               )}
