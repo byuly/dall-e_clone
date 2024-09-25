@@ -25,7 +25,7 @@ router.route('/').post(async (req,res) => {
         const image = aiResponse.data[0].b64_json
 
         res.status(200).json({photo:image}) 
-
+        
        } catch (error){
         console.log(error);
         res.status(500).send(error?.response.data.error.message)
