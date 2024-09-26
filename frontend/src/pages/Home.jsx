@@ -46,6 +46,10 @@ const Home = () => {
     fetchPosts();
   }, []);
 
+  const handleSearchChange= (e) => {
+    
+  }
+
   return (
     <section className="max-w-7x1 mx-auto">
       <div>
