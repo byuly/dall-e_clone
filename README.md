@@ -19,7 +19,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![LinkedIn][linkedin-shield]][[linkedin-url](https://www.linkedin.com/in/byeorik/)]
+[![LinkedIn][linkedin-shield]][[https://www.linkedin.com/in/byeorik/]
 
 
 
