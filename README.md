@@ -20,7 +20,7 @@
 -->
 
 
-[![LinkedIn][linkedin-shield]][linkedin-url](https://www.linkedin.com/in/byeorik/)
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/byeorik/]
 
 <!-- PROJECT LOGO -->
 <br />
