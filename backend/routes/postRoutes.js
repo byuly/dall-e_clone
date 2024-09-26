@@ -29,16 +29,18 @@ router.route('/').get(async(req, res) => {
 router.route('/').post(async(req, res) => {
     try {
         const{name,prompt,photo} = req.body;
-    const photoUrl = await cloudinary.uploader.upload(photo);
+        console.log('Received post data:', { name, prompt, photo });
+        const photoUrl = await cloudinary.uploader.upload(photo);
+        const newPost = await Post.create({
+            name,
+            prompt,
+            photo: photoUrl.url,});
+    console.log('Post successfully created:', newPost);  // Log the created post
 
-    const newPost= await Post.create({
-        name,
-        prompt,
-        photo: photoUrl.url,
-    })
 
     res.status(201).json({ success:true, data: newPost});
     } catch (error) {
+        console.error('Error creating post:', error.message);
         res.status(500).json({ success: false, message: "post"})
     }
 });
