@@ -28,7 +28,10 @@
 <div align="center">
   <a href="https://github.com/byuly/dall-e_clone">
   </a>
-
+ <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="data/icons8-chatgpt.svg" alt="Logo" width="120" height="120">
+  </a>
+  
 <h3 align="center">DALL-E Clone Website!</h3>
 
   <p align="center">
