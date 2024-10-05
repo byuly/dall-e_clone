@@ -109,22 +109,28 @@ This is an example of how to list things you need to use the software and how to
    git clone https://github.com/github_username/repo_name.git
    ```
 3. Install NPM packages
+  in frontend directory:
    ```sh
-  - in frontend directory:
    npm install
-  - for TailwindCSS: 
    npm install -D tailwindcss
    npx tailwindcss init
-  - in backend directory:
+   ```
+   in backend directory:
+   ```sh
    npm install cloudinary cors .env express mongoose nodemon openai 
-   
    ```
 4. Enter your API in `.env`
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
-5. npm run dev in frontend
-   npm start in backednd to start server
+5. in frontend
+   ```sh
+   npm run dev
+   ```
+   ```sh
+   npm start
+   ``` 
+   in backend to start server
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
