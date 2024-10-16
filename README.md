@@ -35,7 +35,7 @@
 <h3 align="center">DALL-E Clone Website!</h3>
 
   <p align="center">
-    The DALL-E website is currently out of service, and we miss it! This project aims to replicate the functionality of the original DALL-E image generation service, allowing users to create stunning images from textual descriptions using the latest advancements in AI and machine learning. The clone offers a user-friendly interface where individuals can input their desired prompts and receive high-quality images generated based on those prompts. 
+    The DALL-E website is currently out of service, and we miss it! This project aims to replicate the functionality of the original DALL-E image generation service, allowing users to create stunning images from textual descriptions using the latest advancements in AI and machine learning. The clone offers a user-friendly interface where individuals can input their desired prompts and receive/download high-quality images generated based on those prompts. 
     <br
     <br />
     <br />
